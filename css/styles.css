@@ -199,6 +199,7 @@ body {
   font-size: 1.05rem;
   letter-spacing: -0.02em;
   color: #fff;
+  white-space: nowrap;
 }
 
 .brand-title {
@@ -966,6 +967,8 @@ section {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
   color: #cbd5e1;
 }
 
@@ -1670,12 +1673,18 @@ section {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints
+   Responsive Breakpoints & Mobile Optimization
    ========================================================================== */
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 1.25rem;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+  .hero-content {
+    max-width: 100%;
   }
   .benchmark-metrics-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1689,30 +1698,326 @@ section {
 }
 
 @media (max-width: 768px) {
+  /* Navigation */
+  .site-header {
+    background: rgba(7, 9, 14, 0.95);
+  }
+  .nav-inner {
+    height: 66px;
+  }
+  .brand-name {
+    font-size: 0.95rem;
+  }
+  .brand-title {
+    font-size: 0.68rem;
+  }
+  #downloadResumeHeader {
+    display: none; /* Keep header clean on mobile, shown in hero & modal */
+  }
   .nav-links {
     display: none;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(7, 9, 14, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+    z-index: 999;
+    overflow-y: auto;
   }
   .nav-links.mobile-open {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 74px;
-    left: 0;
-    right: 0;
-    background: #07090e;
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--border-subtle);
+    animation: fadeIn 0.25s ease;
+  }
+  .nav-link {
+    font-size: 1.15rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
   .mobile-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    color: #fff;
+    cursor: pointer;
   }
-  .benchmark-metrics-grid {
+
+  /* Section Spacing */
+  section {
+    padding: 3.5rem 0;
+  }
+  .section-header {
+    margin-bottom: 2.25rem;
+    text-align: left;
+  }
+  .section-title {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .section-lead {
+    font-size: 0.95rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 2.5rem 0 3rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  .hero-desc {
+    font-size: 0.98rem;
+    margin-bottom: 1.75rem;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  .hero-badges-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1rem;
+    padding-top: 1.25rem;
+  }
+  .hero-stat-val {
+    font-size: 1.35rem;
+  }
+  .hero-telemetry-card {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+  }
+  .terminal-live-feed {
+    height: 120px;
+    font-size: 0.7rem;
+    padding: 0.65rem;
+  }
+
+  /* Architecture Explorer */
+  .arch-card-main {
+    padding: 1.25rem 0.9rem;
+    border-radius: var(--radius-md);
+  }
+  .arch-controls-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .arch-interactive-indicator {
+    font-size: 0.74rem;
+  }
+  .arch-tier {
+    padding: 0.85rem;
+  }
+  .arch-tier-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    font-size: 0.68rem;
+  }
+  .arch-nodes-row {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .arch-node {
+    padding: 0.85rem;
   }
   .coordinator-pipeline-grid {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .agents-mesh-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .arch-bus-connector {
+    font-size: 0.68rem;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .arch-spec-drawer {
+    padding: 1rem 0.85rem;
   }
   .spec-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .spec-details-list li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .spec-details-list li strong {
+    min-width: unset;
+  }
+
+  /* Live Simulator */
+  .simulator-card {
+    padding: 1.25rem 0.85rem;
+    border-radius: var(--radius-md);
+  }
+  .query-preset-chips {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .query-chip-btn {
+    width: 100%;
+    font-size: 0.78rem;
+    padding: 0.6rem 0.75rem;
+  }
+  .simulator-input-wrap {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .query-input-field {
+    font-size: 0.88rem;
+    padding: 0.75rem 0.85rem;
+  }
+  #runSimulatorBtn {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 0.92rem;
+  }
+  .stages-stepper {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  .stage-step {
+    padding: 0.65rem 0.75rem;
+  }
+  .simulation-console {
+    font-size: 0.74rem;
+    padding: 0.85rem;
+    min-height: 180px;
+    max-height: 280px;
+  }
+
+  /* Benchmark Metrics */
+  .benchmark-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .metric-card {
+    padding: 1.25rem 1rem;
+  }
+  .metric-value {
+    font-size: 1.85rem;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    gap: 1.75rem;
+  }
+  .project-card {
+    padding: 1.35rem 1rem;
+    border-radius: var(--radius-md);
+  }
+  .project-title {
+    font-size: 1.35rem;
+  }
+  .project-highlights-list li {
+    font-size: 0.85rem;
+    padding-left: 1.2rem;
+  }
+  .project-tech-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Skills Filter Controls */
+  .skills-controls {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.85rem;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5rem;
+  }
+  .skill-filter-btn {
+    white-space: nowrap;
+    font-size: 0.78rem;
+    padding: 0.45rem 0.95rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Experience Timeline */
+  .experience-timeline {
+    padding-left: 1.5rem;
+  }
+  .timeline-node-dot {
+    left: -1.5rem;
+    width: 18px;
+    height: 18px;
+  }
+  .timeline-card {
+    padding: 1.25rem 1rem;
+  }
+  .timeline-role {
+    font-size: 1.1rem;
+  }
+  .timeline-points-list li {
+    font-size: 0.85rem;
+  }
+
+  /* Contact Section */
+  .contact-card-main {
+    padding: 2rem 1rem;
+  }
+  .contact-actions-grid {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .contact-method-pill {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.84rem;
+    padding: 0.85rem;
+  }
+  
+  /* Resume Modal */
+  .modal-window {
+    width: 100%;
+    height: 94vh;
+    border-radius: var(--radius-sm);
+  }
+  .modal-header {
+    padding: 0.85rem 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-badges-strip {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
