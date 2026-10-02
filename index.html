@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suraj Kumar Sahoo | Distributed Systems & Agentic AI Engineer</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Portfolio of Suraj Kumar Sahoo — Software Developer at National Informatics Centre (NIC). Specializing in Agentic AI, Multi-Agent Orchestration, gRPC, Model Context Protocol (MCP), and Scalable Distributed Systems.">
+  <meta name="keywords" content="Suraj Kumar Sahoo, Agentic AI, Distributed Systems, Multi-Agent Orchestration, SAINET, NIC, National Informatics Centre, gRPC, Model Context Protocol, MCP, Qdrant, MongoDB">
+  <meta name="author" content="Suraj Kumar Sahoo">
+  
+  <meta property="og:title" content="Suraj Kumar Sahoo | Distributed Systems & Agentic AI Engineer">
+  <meta property="og:description" content="Architected SAINET: Enterprise Multi-Agent mesh coordinating 6+ micro-agents over gRPC, Model Context Protocol (MCP), and Sub-10ms Agentic Memory across 1.3M+ records.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <!-- Ambient Decorative Lighting Elements -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+  <div class="grid-bg-overlay"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-badge" id="navBrand">
+        <div class="brand-logo-icon">S</div>
+        <div class="brand-info">
+          <span class="brand-name">Suraj Kumar Sahoo</span>
+          <span class="brand-title">
+            <span class="pulse-dot"></span> NIC • Govt of India
+          </span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Overview</a></li>
+          <li><a href="#architecture" class="nav-link">System Design</a></li>
+          <li><a href="#simulator" class="nav-link">Live Pipeline</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="resume_suraj.pdf" download="Suraj_Kumar_Sahoo_Resume.pdf" class="btn btn-emerald btn-sm" id="downloadResumeHeader">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Resume (PDF)
+        </a>
+        <a href="https://github.com/Suraj-729" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tagline">
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              Distributed Multi-Agent Specialist
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">NIC • Government of India</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="text-gradient">Production-Grade Multi-Agent</span> AI & Resilient Systems
+          </h1>
+
+          <p class="hero-desc">
+            Hi, I'm <strong>Suraj Kumar Sahoo</strong>. I build sovereign, scalable agentic AI mesh networks and distributed backend architectures at the <strong>National Informatics Centre (NIC)</strong>. Architect of <strong>Enterprise Multi-Agent AI Platforms</strong>, coordinating specialized micro-agents via <strong>gRPC Proto3</strong>, <strong>Model Context Protocol (MCP)</strong>, and self-validating <strong>Text-to-NoSQL</strong> query compilers across <strong>1.3M+ production records</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#architecture" class="btn btn-primary" id="exploreArchBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              Explore System Architecture
+            </a>
+            <a href="#simulator" class="btn btn-secondary" id="tryPipelineBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Live Pipeline Simulator
+            </a>
+            <button class="btn btn-secondary" id="viewResumeBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Preview Resume
+            </button>
+          </div>
+
+          <!-- Hero Metrics Strip -->
+          <div class="hero-badges-strip">
+            <div class="hero-stat-item">
+              <span class="hero-stat-val emerald">100.0%</span>
+              <span class="hero-stat-label">Factual Precision</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-val">1.3M+</span>
+              <span class="hero-stat-label">Production Records</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-val">11.26s</span>
+              <span class="hero-stat-label">P50 Live Query Latency</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-val emerald">&lt; 10ms</span>
+              <span class="hero-stat-label">0-Token Cache Hit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telemetry Live Feed Card -->
+        <div class="hero-visual">
+          <div class="hero-telemetry-card">
+            <div class="telemetry-header">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span class="terminal-title">enterprise-agent-mesh.distributed [ACTIVE]</span>
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-emerald);">HEALTH: 100%</span>
+            </div>
+
+            <div class="telemetry-body">
+              <div class="telemetry-row">
+                <span class="telemetry-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  Master Coordinator
+                </span>
+                <span class="telemetry-metric">gRPC :50051 • Streaming</span>
+              </div>
+
+              <div class="telemetry-row emerald">
+                <span class="telemetry-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                  Central MongoMCP
+                </span>
+                <span class="telemetry-metric">SSE :8085 • Schema-Guarded</span>
+              </div>
+
+              <div class="telemetry-row purple">
+                <span class="telemetry-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  Qdrant Vector DB
+                </span>
+                <span class="telemetry-metric">384-D • Sub-10ms Cache</span>
+              </div>
+
+              <div class="telemetry-row amber">
+                <span class="telemetry-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  AST Security Guard
+                </span>
+                <span class="telemetry-metric">0 Unsafe Injections</span>
+              </div>
+            </div>
+
+            <!-- Terminal Live Feed -->
+            <div class="terminal-live-feed" id="terminalLiveFeed">
+              <div class="log-line">
+                <span class="log-time">19:42:01</span> <span class="log-tag">[INIT]</span> <span>Enterprise multi-agent mesh cluster started successfully.</span>
+              </div>
+              <div class="log-line">
+                <span class="log-time">19:42:02</span> <span class="log-tag grpc">[gRPC]</span> <span>Bound 6 micro-agents across ports 50051–50061.</span>
+              </div>
+              <div class="log-line">
+                <span class="log-time">19:42:03</span> <span class="log-tag success">[QDRANT]</span> <span>Loaded 'geo_taxonomy_master' and 'agentic_vector_memory' indices.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FEATURED SYSTEM DESIGN: SAINET INTERACTIVE ARCHITECTURE EXPLORER
+         ======================================================================= -->
+    <section id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            System Design & Scalable Architecture
+          </div>
+          <h2 class="section-title">Enterprise Multi-Agent Mesh Architecture</h2>
+          <p class="section-lead">
+            An autonomous, fault-tolerant multi-agent AI operating platform engineered for high-concurrency public sector governance. Click any node below to inspect its production protocols, AST validation safeguards, and runtime specifications.
+          </p>
+        </div>
+
+        <div class="arch-card-main">
+          <div class="arch-controls-bar">
+            <div class="arch-view-tabs">
+              <button class="arch-tab-btn active">Interactive Mesh Blueprint</button>
+            </div>
+            <div class="arch-interactive-indicator">
+              <span class="pulse-dot"></span>
+              Click any architectural component to inspect runtime specs
+            </div>
+          </div>
+
+          <!-- The Multi-Tier Architecture Diagram Grid -->
+          <div class="arch-diagram-grid">
+            
+            <!-- TIER 1: Client & Gateway Layer -->
+            <div class="arch-tier">
+              <div class="arch-tier-title">
+                <span>Tier 1 • Client Portal & API Ingress</span>
+                <span class="arch-tier-badge">HTTP / SSE / WebSocket Gateway</span>
+              </div>
+              <div class="arch-nodes-row">
+                <div class="arch-node" data-component="gateway">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <span class="arch-node-port">PORT 8000</span>
+                  </div>
+                  <div class="arch-node-name">FastAPI Gateway & Auth Core</div>
+                  <div class="arch-node-desc">JWT Auth, Redis session state, OpenTelemetry traces, SSE token streaming chunks.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Connector Bus -->
+            <div class="arch-bus-connector">
+              <span class="pulse-arrow">▼</span> Bidirectional gRPC Streaming (Proto3 Contract) <span class="pulse-arrow">▼</span>
+            </div>
+
+            <!-- TIER 2: Master Coordinator & Security Core -->
+            <div class="arch-tier" style="border-color: rgba(99, 102, 241, 0.35);">
+              <div class="arch-tier-title">
+                <span style="color: #818cf8;">Tier 2 • Central Master Coordinator (AgentScope Core)</span>
+                <span class="arch-tier-badge">Port 50051 • Mesh Brain</span>
+              </div>
+              <div class="arch-node" data-component="master-coordinator" style="margin-bottom: 0.85rem;">
+                <div class="arch-node-top">
+                  <div class="arch-node-icon purple">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  </div>
+                  <span class="arch-node-port">PORT 50051</span>
+                </div>
+                <div class="arch-node-name">Master Coordinator Orchestrator</div>
+                <div class="arch-node-desc">Coordinates compound query decomposition, parallel gRPC stream dispatching, and Jinja2 synthesis.</div>
+              </div>
+
+              <!-- Internal Coordinator Pipeline Stages -->
+              <div class="coordinator-pipeline-grid">
+                <div class="pipeline-step-mini">
+                  <span>1. Security Shield</span>
+                  Aadhaar/Phone PII scrub + Prompt injection gate
+                </div>
+                <div class="pipeline-step-mini">
+                  <span>2. NLP Preprocessor</span>
+                  NLTK typo recovery + Domain lemmatizer
+                </div>
+                <div class="pipeline-step-mini">
+                  <span>3. Semantic Router</span>
+                  Sub-4ms ONNX schema-driven classifier
+                </div>
+                <div class="pipeline-step-mini">
+                  <span>4. Agentic Memory</span>
+                  Qdrant vector hit for &lt;10ms 0-token response
+                </div>
+              </div>
+            </div>
+
+            <!-- Connector Bus -->
+            <div class="arch-bus-connector">
+              <span class="pulse-arrow">▼</span> Concurrent gRPC Micro-Agent Dispatch <span class="pulse-arrow">▼</span>
+            </div>
+
+            <!-- TIER 3: Specialized Micro-Agent Domain Mesh -->
+            <div class="arch-tier">
+              <div class="arch-tier-title">
+                <span>Tier 3 • Autonomous Domain Micro-Agent Mesh</span>
+                <span class="arch-tier-badge">Isolated Microservices • gRPC Proto3</span>
+              </div>
+              <div class="agents-mesh-grid">
+                <div class="arch-node" data-component="sathicpr">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon emerald">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                    </div>
+                    <span class="arch-node-port">:50059</span>
+                  </div>
+                  <div class="arch-node-name">Production Analytics Agent</div>
+                  <div class="arch-node-desc">1.3M+ Records Analytics, AST QueryPlanValidator, MongoDB Aggregation Compiler.</div>
+                </div>
+
+                <div class="arch-node" data-component="documentseeker">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <span class="arch-node-port">:50056</span>
+                  </div>
+                  <div class="arch-node-name">DocumentSeeker</div>
+                  <div class="arch-node-desc">Legal RAG: Seeds Act 1966, Seeds Rules 1968, Fertilizer Control Order 1985.</div>
+                </div>
+
+                <div class="arch-node" data-component="licensing-mesh">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon amber">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <span class="arch-node-port">:50060/53/57</span>
+                  </div>
+                  <div class="arch-node-name">Licensing Mesh</div>
+                  <div class="arch-node-desc">Seed, Fertilizer (mFMS), and Pesticide dealer permits & renewal state machines.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Connector Bus -->
+            <div class="arch-bus-connector">
+              <span class="pulse-arrow">▼</span> Standardized Tool Protocol & Lakehouse Provenance <span class="pulse-arrow">▼</span>
+            </div>
+
+            <!-- TIER 4: Centralized Services & Storage -->
+            <div class="arch-tier" style="border-color: rgba(16, 185, 129, 0.35);">
+              <div class="arch-tier-title">
+                <span style="color: var(--accent-emerald);">Tier 4 • Centralized Services & Storage Engine</span>
+                <span class="arch-tier-badge">Model Context Protocol (MCP) • Qdrant • S3</span>
+              </div>
+              <div class="arch-nodes-row">
+                <div class="arch-node" data-component="mongo-mcp">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon emerald">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    </div>
+                    <span class="arch-node-port">PORT 8085</span>
+                  </div>
+                  <div class="arch-node-name">MongoMCP Microservice</div>
+                  <div class="arch-node-desc">Model Context Protocol over SSE; isolates credentials, enforces AST schema safety.</div>
+                </div>
+
+                <div class="arch-node" data-component="qdrant-engine">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon purple">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+                    </div>
+                    <span class="arch-node-port">PORT 6333</span>
+                  </div>
+                  <div class="arch-node-name">Qdrant Vector DB & Memory</div>
+                  <div class="arch-node-desc">Stores `india_geomaster` entities, statutory document vectors, and agentic cache.</div>
+                </div>
+
+                <div class="arch-node" data-component="data-lake">
+                  <div class="arch-node-top">
+                    <div class="arch-node-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <span class="arch-node-port">S3 / MINIO</span>
+                  </div>
+                  <div class="arch-node-name">Medallion Data Lakehouse</div>
+                  <div class="arch-node-desc">Bronze raw dumps, Silver cleaned text, Gold embeddings with full audit provenance.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Component Specification Inspector Drawer -->
+          <div class="arch-spec-drawer" id="archSpecDrawer">
+            <div class="spec-header">
+              <div class="spec-title-wrap">
+                <span class="spec-title" id="specTitle">Component Specification</span>
+                <span class="spec-meta-tag" id="specBadge">PORT 50051</span>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="closeSpecBtn" style="padding: 0.35rem 0.75rem;">✕ Close Spec</button>
+            </div>
+            <p id="specRole" style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.5rem;"></p>
+
+            <div class="spec-grid">
+              <div>
+                <h4 style="font-size: 0.85rem; color: var(--accent-cyan); text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.85rem;">Production Technical Profile</h4>
+                <ul class="spec-details-list" id="specList">
+                  <!-- Dynamic Spec Items -->
+                </ul>
+              </div>
+
+              <div>
+                <h4 style="font-size: 0.85rem; color: var(--accent-cyan); text-transform: uppercase; font-family: var(--font-mono); margin-bottom: 0.85rem;">Implementation Blueprint Snippet</h4>
+                <pre class="spec-code-box"><code id="specCode"># Select a component to view code</code></pre>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         LIVE PIPELINE & QUERY SIMULATOR
+         ======================================================================= -->
+    <section class="simulator-section" id="simulator">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Interactive Execution Flow
+          </div>
+          <h2 class="section-title">Test the Multi-Agent Query Pipeline</h2>
+          <p class="section-lead">
+            Select a live query scenario to observe real-time security scanning, AST query compilation, vector entity normalization, and synthesized output generation.
+          </p>
+        </div>
+
+        <div class="simulator-card">
+          <!-- Preset Query Chips -->
+          <div class="query-preset-chips">
+            <button class="query-chip-btn active" data-preset="sathi">
+              <strong>Scenario 1:</strong> Large-Scale Production Analytics & Yield Comparison (1.3M Records)
+            </button>
+            <button class="query-chip-btn" data-preset="statutory">
+              <strong>Scenario 2:</strong> Regulatory Legal RAG (Seeds Rules 1968)
+            </button>
+            <button class="query-chip-btn" data-preset="multi_intent">
+              <strong>Scenario 3:</strong> Multi-Intent Composite Query (License Renewal + Dealer Count)
+            </button>
+          </div>
+
+          <!-- Input Box -->
+          <div class="simulator-input-wrap">
+            <input type="text" class="query-input-field" id="simulatorQueryInput" value="Show certified paddy seed distribution in Cuttack district for Kharif 2024 and compare with Khordha" readonly>
+            <button class="btn btn-emerald" id="runSimulatorBtn">
+              <span>Execute Pipeline Flow</span>
+              <span>⚡</span>
+            </button>
+          </div>
+
+          <!-- Pipeline Stages Stepper -->
+          <div class="stages-stepper">
+            <div class="stage-step" id="stage1">
+              <div class="stage-num">01 / SECURITY</div>
+              <div class="stage-name">PII & Injection Guard</div>
+              <div class="stage-status">Idle</div>
+            </div>
+            <div class="stage-step" id="stage2">
+              <div class="stage-num">02 / NLP ROUTE</div>
+              <div class="stage-name">Semantic Classification</div>
+              <div class="stage-status">Idle</div>
+            </div>
+            <div class="stage-step" id="stage3">
+              <div class="stage-num">03 / ENTITY & AST</div>
+              <div class="stage-name">Qdrant & Plan Validator</div>
+              <div class="stage-status">Idle</div>
+            </div>
+            <div class="stage-step" id="stage4">
+              <div class="stage-num">04 / EXECUTION</div>
+              <div class="stage-name">MongoMCP Microservice</div>
+              <div class="stage-status">Idle</div>
+            </div>
+            <div class="stage-step" id="stage5">
+              <div class="stage-num">05 / SYNTHESIS</div>
+              <div class="stage-name">SSE Streaming Output</div>
+              <div class="stage-status">Idle</div>
+            </div>
+          </div>
+
+          <!-- Execution Console Feed -->
+          <div class="simulation-console" id="simulationConsole">
+            <div class="log-line">
+              <span class="log-time">[STANDBY]</span> <span class="log-tag">[READY]</span> <span>Click "Execute Pipeline Flow" above to simulate request routing and telemetry.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         BENCHMARK & PRODUCTION RELIABILITY
+         ======================================================================= -->
+    <section style="background: rgba(13, 18, 31, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">Empirical Validation</div>
+          <h2 class="section-title">Large-Scale Production Analytics Benchmark</h2>
+          <p class="section-lead">
+            Validated against complex multi-season, multi-district enterprise analytical queries across 1.3M+ database records.
+          </p>
+        </div>
+
+        <div class="benchmark-metrics-grid">
+          <div class="metric-card emerald">
+            <div class="metric-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="metric-value">100.0%</div>
+            <div class="metric-label">Factual Precision Rate</div>
+            <div class="metric-sub">150 / 150 ground-truth facts verified across multi-year queries</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div class="metric-value">0 Crashes</div>
+            <div class="metric-label">Zero-Error Execution</div>
+            <div class="metric-sub">50/50 clean responses with AST-level safety compliance</div>
+          </div>
+
+          <div class="metric-card purple">
+            <div class="metric-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="metric-value">11.26s</div>
+            <div class="metric-label">Median (P50) Latency</div>
+            <div class="metric-sub">End-to-end multi-agent orchestration, parsing & MongoDB compile</div>
+          </div>
+
+          <div class="metric-card amber">
+            <div class="metric-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <div class="metric-value">&lt; 10ms</div>
+            <div class="metric-label">Agentic Memory Cache</div>
+            <div class="metric-sub">High-dimensional vector cache recall with 0 LLM token cost</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         PROJECTS PORTFOLIO
+         ======================================================================= -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">Flagship Engineering</div>
+          <h2 class="section-title">Featured Projects & Systems</h2>
+          <p class="section-lead">
+            Production distributed systems, agentic platforms, and enterprise search engines built for high concurrency and mission-critical government operations.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Enterprise Multi-Agent Platform -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div>
+                <div class="project-meta-wrap">
+                  <span class="project-badge flagship">FLAGSHIP DISTRIBUTED PLATFORM</span>
+                  <span class="project-badge">NIC • GOVT OF INDIA</span>
+                  <span class="project-badge">ACTIVE PRODUCTION</span>
+                </div>
+                <h3 class="project-title">Enterprise Multi-Agent AI Platform (Gov-Tech Initiative)</h3>
+                <div class="project-org">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  National Informatics Centre (NIC) • Bhubaneswar, Odisha
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 0.6rem;">
+                <a href="#architecture" class="btn btn-secondary btn-sm">
+                  View Architecture
+                </a>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              Enterprise-grade multi-agent AI operating platform uniting statutory regulatory retrieval (RAG), large-scale seed production analytics (1.3M+ records), dealer licensing state machines, and weather forecasting into an autonomous, coordinated micro-agent mesh.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li><strong>Distributed gRPC Streaming:</strong> Architected AgentScope-based multi-agent core coordinating central Master Agent with 6+ domain services using bidirectional gRPC Proto3 streaming in Docker Compose.</li>
+              <li><strong>Centralized MongoMCP Service:</strong> Implemented Model Context Protocol (MCP) over HTTP/SSE, isolating direct database access and enabling autonomous agents to invoke schema-safe tools with deterministic execution.</li>
+              <li><strong>Text-to-Mongo AST Compiler:</strong> Engineered an agentic query compiler with an AST-level <code>QueryPlanValidator</code> that prevents hallucinated or dangerous aggregation operators over 1.3M+ records.</li>
+              <li><strong>Semantic Entity Normalization:</strong> Integrated Qdrant vector index (<code>india_geomaster</code>) and agentic memory for sub-10ms query caching and colloquial alias resolution.</li>
+              <li><strong>Certified 100% Precision:</strong> Validated via a 50-query live benchmark, achieving 100.0% factual accuracy (150/150 ground-truth facts) and zero runtime crashes.</li>
+              <li><strong>Distributed Observability:</strong> Instrumented OpenTelemetry, Jaeger tracing, Prometheus metrics, and FastAPI Server-Sent Events (SSE) token streaming.</li>
+            </ul>
+
+            <div class="project-tech-strip">
+              <div class="tech-tags">
+                <span class="tech-tag">AgentScope</span>
+                <span class="tech-tag">gRPC (Proto3)</span>
+                <span class="tech-tag">Model Context Protocol (MCP)</span>
+                <span class="tech-tag">Qdrant Vector DB</span>
+                <span class="tech-tag">MongoDB 7.0</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">OpenTelemetry</span>
+                <span class="tech-tag">Docker Compose</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: BILLION-EYE -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div>
+                <div class="project-meta-wrap">
+                  <span class="project-badge">GOVERNMENT AI INITIATIVE</span>
+                  <span class="project-badge">REAL-TIME ANALYTICS</span>
+                </div>
+                <h3 class="project-title">BILLION-EYE — Real-Time Traffic Incident Analytics</h3>
+                <div class="project-org">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                  Government of India Initiative • AI Engineering Intern
+                </div>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              High-throughput backend service engineered to process real-time traffic camera feeds, vehicle telemetry, and incident detection alerts for urban traffic governance.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li><strong>Scalable Backend Services:</strong> Developed Node.js and Express.js REST microservices processing concurrent event streams from IoT camera sensors.</li>
+              <li><strong>35% Query Latency Drop:</strong> Architected custom MongoDB aggregation pipelines, compound indexing structures, and query execution optimizations for analytics dashboards.</li>
+              <li><strong>Redis Caching Layer:</strong> Engineered write-through caching mechanisms to deliver sub-5ms latency for frequently requested incident hot-spots.</li>
+              <li><strong>Containerized Deployment:</strong> Implemented Dockerized environments with automated health checks, increasing operational stability in staging and production.</li>
+            </ul>
+
+            <div class="project-tech-strip">
+              <div class="tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB Aggregations</span>
+                <span class="tech-tag">Redis Caching</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: DocumentSeeker -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div>
+                <div class="project-meta-wrap">
+                  <span class="project-badge">ENTERPRISE KNOWLEDGE RETRIEVAL</span>
+                  <span class="project-badge">STRICT CITATION RAG</span>
+                </div>
+                <h3 class="project-title">DocumentSeeker — Enterprise Semantic Knowledge Retrieval</h3>
+                <div class="project-org">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  Enterprise Knowledge Platform
+                </div>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              High-precision semantic document retrieval platform designed for statutory acts, legal compliance, and regulatory policy question-answering with strict zero-hallucination guardrails.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li><strong>Hybrid Semantic Indexing:</strong> Leveraged Qdrant vector database paired with Sentence-Transformers (<code>all-MiniLM-L6-v2</code>) for dense semantic recall.</li>
+              <li><strong>Strict Grounding Guardrails:</strong> Built multi-pass citation verification to enforce that every generated legal answer cites exact sections and gazette notices.</li>
+              <li><strong>Chunking Strategy:</strong> Designed structure-aware hierarchical document chunking tailored for legal acts and technical manuals.</li>
+            </ul>
+
+            <div class="project-tech-strip">
+              <div class="tech-tags">
+                <span class="tech-tag">Python (Asyncio)</span>
+                <span class="tech-tag">Qdrant Vector DB</span>
+                <span class="tech-tag">Sentence-Transformers</span>
+                <span class="tech-tag">RAG Pipelines</span>
+                <span class="tech-tag">Hallucination Guardrails</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TECHNICAL SKILLS MATRIX
+         ======================================================================= -->
+    <section id="skills" style="background: rgba(13, 18, 31, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">Competencies & Toolchain</div>
+          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-lead">
+            Curated toolkit honed across distributed systems, agentic AI frameworks, databases, and high-concurrency protocols.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-controls">
+          <button class="skill-filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="skill-filter-btn" data-filter="agentic">Agentic AI & LLMs</button>
+          <button class="skill-filter-btn" data-filter="backend">Backend & Distributed</button>
+          <button class="skill-filter-btn" data-filter="databases">Databases & Vectors</button>
+          <button class="skill-filter-btn" data-filter="devops">DevOps & Observability</button>
+          <button class="skill-filter-btn" data-filter="languages">Languages</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Agentic AI -->
+          <div class="skill-card" data-category="agentic">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">⚡</div>
+              <div class="skill-cat-title">Agentic AI & LLMs</div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-name">Multi-Agent Orchestration</span>
+                <span class="skill-level-tag">AgentScope / LangGraph</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Model Context Protocol (MCP)</span>
+                <span class="skill-level-tag">HTTP / SSE Servers</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Autonomous Tool Calling</span>
+                <span class="skill-level-tag">Schema-Safe</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Semantic Routing</span>
+                <span class="skill-level-tag">ONNX Sub-4ms</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Agentic Vector Memory</span>
+                <span class="skill-level-tag">0-Token Cache</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Hallucination Guardrails</span>
+                <span class="skill-level-tag">AST Validated</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & Distributed -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.1);">⚙️</div>
+              <div class="skill-cat-title">Backend & Distributed Systems</div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-name">FastAPI & Asyncio</span>
+                <span class="skill-level-tag">High Concurrency</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">gRPC & Protocol Buffers (Proto3)</span>
+                <span class="skill-level-tag">Bidirectional Stream</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Microservices Architecture</span>
+                <span class="skill-level-tag">Mesh Topology</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Node.js & Express.js</span>
+                <span class="skill-level-tag">Event-Driven</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Server-Sent Events (SSE)</span>
+                <span class="skill-level-tag">Real-Time Streams</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">RESTful API Design</span>
+                <span class="skill-level-tag">OpenAPI Specs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Databases & Vectors -->
+          <div class="skill-card" data-category="databases">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="color: var(--accent-violet); background: rgba(168, 85, 247, 0.1);">🗄️</div>
+              <div class="skill-cat-title">Databases & Vector Stores</div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-name">Qdrant Vector Database</span>
+                <span class="skill-level-tag">HNSW Dense Index</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB & Motor Engine</span>
+                <span class="skill-level-tag">Complex Pipelines</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Redis Caching</span>
+                <span class="skill-level-tag">Sub-5ms Recall</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">DuckDB & SQLite</span>
+                <span class="skill-level-tag">In-Process OLAP</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Medallion Lakehouse</span>
+                <span class="skill-level-tag">Bronze/Silver/Gold</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: DevOps & Observability -->
+          <div class="skill-card" data-category="devops">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.1);">📊</div>
+              <div class="skill-cat-title">DevOps & Observability</div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-name">Docker & Docker Compose</span>
+                <span class="skill-level-tag">Multi-Container Mesh</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">OpenTelemetry (OTel)</span>
+                <span class="skill-level-tag">Distributed Tracing</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Jaeger Tracing</span>
+                <span class="skill-level-tag">Span Visualization</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Prometheus & Grafana</span>
+                <span class="skill-level-tag">Live Metrics</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git & GitLab CI/CD</span>
+                <span class="skill-level-tag">Production Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Languages -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">💻</div>
+              <div class="skill-cat-title">Languages</div>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <span class="skill-name">Python (Asyncio)</span>
+                <span class="skill-level-tag">Certified Associate</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level-tag">Async / Streams</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level-tag">Relational Queries</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Protocol Buffers (proto3)</span>
+                <span class="skill-level-tag">Contract Schemas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         EXPERIENCE & EDUCATION
+         ======================================================================= -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-subtitle">Career Progression</div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-lead">
+            Delivering robust, national-scale government technology systems and AI platforms.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Item 1: NIC Software Developer -->
+          <div class="timeline-item">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Developer</h3>
+                  <div class="timeline-org">National Informatics Centre (NIC) • Bhubaneswar, Odisha</div>
+                </div>
+                <span class="timeline-duration">Nov 2025 – Present</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--accent-cyan); font-weight: 500;">
+                Project: SAINET – Smart Agriculture Intelligence Network
+              </p>
+              <ul class="timeline-points-list">
+                <li>Architected a production-grade <strong>AgentScope-based Distributed Multi-Agent platform</strong> coordinating a central Master Agent and 6+ specialized domain services using <strong>gRPC proto3 streaming</strong> and Docker Compose.</li>
+                <li>Integrated a centralized <strong>MongoMCP service</strong> (Model Context Protocol over HTTP/SSE), enabling autonomous agents to execute schema-safe query tools with deterministic execution.</li>
+                <li>Built an agentic <strong>Text-to-Mongo query compiler</strong> coupled with an AST-level <code>QueryPlanValidator</code> to eliminate hallucinated queries and safely execute complex aggregations across <strong>1.3M+ production records</strong>.</li>
+                <li>Implemented semantic entity resolution and agentic memory using <strong>Qdrant vector store</strong> (<code>india_geomaster</code>), enabling agents to autonomously resolve colloquial aliases and agricultural taxonomy.</li>
+                <li>Evaluated system via a <strong>50-query live benchmark</strong>, achieving <strong>100.0% factual precision</strong> (150/150 ground-truth facts) with an 11.26s P50 latency and zero runtime crashes across multi-season queries.</li>
+                <li>Engineered distributed tracing across agent runtimes using <strong>OpenTelemetry, Jaeger, and Prometheus</strong>, streaming live agent telemetry and token chunks via FastAPI Server-Sent Events (SSE).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: AI Engineer Intern -->
+          <div class="timeline-item">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">AI Engineer Intern</h3>
+                  <div class="timeline-org">National Informatics Centre (NIC) • Govt AI Initiative</div>
+                </div>
+                <span class="timeline-duration">Jan 2025 – Oct 2025</span>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--accent-cyan); font-weight: 500;">
+                Project: BILLION-EYE – Real-Time Incident Analytics
+              </p>
+              <ul class="timeline-points-list">
+                <li>Developed scalable backend services using <strong>Node.js, Express.js, and MongoDB</strong> for real-time traffic incident analytics.</li>
+                <li>Designed MongoDB aggregation pipelines, indexing strategies, and REST APIs for analytics dashboards, reducing query latency by <strong>35%</strong>.</li>
+                <li>Optimized database performance through query tuning, indexing on large datasets, and <strong>Redis caching layers</strong>.</li>
+                <li>Collaborated with the development team to enhance backend reliability, Docker containerization, and production readiness.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3: Education & Certification -->
+          <div class="timeline-item">
+            <div class="timeline-node-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Education & Certification</h3>
+                  <div class="timeline-org">Indira Gandhi Institute of Technology (IGIT), Sarang</div>
+                </div>
+                <span class="timeline-duration">2021 – 2025</span>
+              </div>
+              <ul class="timeline-points-list">
+                <li><strong>B.Tech in Electronics & Telecommunication:</strong> Graduated with CGPA <strong>7.83 / 10.0</strong>. Deep coursework in Signals, Distributed Computing, Computer Architecture, and Networks.</li>
+                <li><strong>Certified Python Developer Associate (CPDA-24):</strong> Lifetime Credential covering advanced data structures, concurrency, Asyncio, and design patterns.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CONTACT & CONNECT
+         ======================================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-main">
+          <div class="section-subtitle" style="justify-content: center;">Get in Touch</div>
+          <h2 class="section-title">Let's Build Scalable Distributed Systems</h2>
+          <p class="section-lead" style="max-width: 620px; margin: 0 auto 1.5rem;">
+            Whether you want to discuss multi-agent orchestration, high-throughput backend architecture, or explore technical collaboration, my inbox is always open.
+          </p>
+
+          <div class="contact-actions-grid">
+            <button class="contact-method-pill" data-copy="surajkumarsahoo729@gmail.com" title="Click to copy email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>surajkumarsahoo729@gmail.com</span>
+              <span style="font-size: 0.72rem; color: var(--accent-cyan); margin-left: 0.4rem;">(Copy)</span>
+            </button>
+
+            <button class="contact-method-pill" data-copy="+918984162299" title="Click to copy phone number">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91-8984162299</span>
+              <span style="font-size: 0.72rem; color: var(--accent-cyan); margin-left: 0.4rem;">(Copy)</span>
+            </button>
+
+            <a href="https://linkedin.com/in/suraj-kumar-sahoo-59a115171" target="_blank" rel="noopener noreferrer" class="contact-method-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <a href="https://github.com/Suraj-729" target="_blank" rel="noopener noreferrer" class="contact-method-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub / Suraj-729</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <a href="mailto:surajkumarsahoo729@gmail.com" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Send Direct Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Suraj Kumar Sahoo. Designed for High Performance & Zero-Downtime Deployment on GitHub Pages & Vercel.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Resume PDF Viewer -->
+  <div class="modal-overlay" id="resumeModal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <span style="font-weight: 700; color: #fff;">Suraj Kumar Sahoo — Resume</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <a href="resume_suraj.pdf" download="Suraj_Kumar_Sahoo_Resume.pdf" class="btn btn-emerald btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download PDF
+          </a>
+          <button class="btn btn-secondary btn-sm" id="closeModalBtn">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="resume_suraj.pdf" title="Suraj Kumar Sahoo Resume PDF"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clipboard Toast -->
+  <div class="toast-msg" id="toastMsg">Copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="js/architecture.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
